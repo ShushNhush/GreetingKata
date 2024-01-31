@@ -53,4 +53,29 @@ public class GreetingTest {
         assertEquals(expected, received);
     }
 
+    @Test
+    void testReq6() {
+
+        Greeting greeting = new Greeting();
+        String expected = "Hello, Amy, and Charlotte. AND HELLO BRIAN!";
+        String received = greeting.greet("Amy", "BRIAN", "Charlotte");
+        assertEquals(expected, received);
+    }
+
+    @Test
+    void testReq7() {
+
+        Greeting greeting = new Greeting();
+        String expected = "Hello, Bob, Charlie, and Dianne.";
+        String received = greeting.greet("Bob", "Charlie, Dianne");
+        assertEquals(expected, received);
+    }
+
+    @Test
+    void testReq8() {
+
+        Greeting greeting = new Greeting();
+
+    }
+
 }
